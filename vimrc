@@ -35,6 +35,8 @@ set list listchars=tab:→\ ,trail:·,extends:>
 " Turn on syntax highlighting
 syntax on
 
+au BufLeave,FocusLost * silent! wall
+
 " =========================== Indentation ===================================
 
 set autoindent
@@ -90,6 +92,7 @@ hi SpellBad ctermfg=gray ctermbg=darkred cterm=underline,bold
 " ============================ File Types ====================================
 
 au BufRead,BufNewFile *.less set filetype=less.css
+au BufRead,BufNewFile *.json set filetype=javascrtipt
 
 " ============================= Mappings =====================================
 
@@ -166,8 +169,6 @@ let g:syntastic_javascript_jshint_conf="~/.vim/.jshintrc"
 
 "End syntastic
 
-au BufLeave,FocusLost * silent! wall
-
 "Start tagbar
 
 nmap <F9> :TagbarToggle<CR>
@@ -178,3 +179,9 @@ let g:tagbar_type_javascript = {
     \ }
 
 "End tagbar
+
+"Start SuperTab
+
+let g:SuperTabNoCompleteAfter=[ '^', '\s', '*', '//' ]
+
+"End SuperTab
