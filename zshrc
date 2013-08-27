@@ -10,6 +10,7 @@ ZSH_THEME="kevin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias :q=exit
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -45,11 +46,16 @@ plugins=(git mercurial grunt hg_prompt npm zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=~/bin/play:$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:~/bin
+#export PATH=~/bin/play:$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:~/bin
 
-# TODO: Figure out what to do with these 
-# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export EDITOR=`which vim`
 
-#source ~/.rvm/scripts/rvm
+PATH=$PATH:$HOME/bin:$HOME/bin/ccollab-cmdline:$HOME/bin/phantomjs/bin
 
-#[[ -s /home/kevin/.nvm/nvm.sh ]] && . /home/kevin/.nvm/nvm.sh # This loads NVM
+[[ -s /home/kevin/.nvm/nvm.sh ]] && . /home/kevin/.nvm/nvm.sh # This loads NVM
+
+if [[ -s /home/kevin/.rvm/scripts/rvm ]]; then
+    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+    source ~/.rvm/scripts/rvm
+fi
