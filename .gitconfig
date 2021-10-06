@@ -1,0 +1,17 @@
+[User]
+  name = Kevin Lakotko
+  email = klakotko@gmail.com
+[Alias]
+  st = status
+  git = "!git"
+  unstage = reset
+  mff = "merge --ff-only"
+  branches = "!git --no-pager branch --sort=-committerdate"
+  prunesquashed = "!git for-each-ref refs/heads/ \"--format=%(refname:short)\" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == \"-\"* ]] && git branch -D $branch; done"
+  dryprunesquash = "!git for-each-ref refs/heads/ \"--format=%(refname:short)\" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == \"-\"* ]] && echo \"$branch can be deleted\"; done"
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = "code --wait $MERGED"
+[mergetool]
+  keepBackup = false
