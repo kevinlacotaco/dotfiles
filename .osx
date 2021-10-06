@@ -33,7 +33,14 @@ else
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 fi
 
+# Backup the current settings
 defaults read > ~/Documents/currentsettings-$(date +%Y-%m-%dT%H:%M)
+
+# Make the code directories if not already
+mkdir -p ~/Repositories
+
+# Add Repositories to the sidebar in finder
+/usr/bin/sfltool add-item com.apple.LSSharedFileList.FavoriteItems file:///Users/$loggedInUser/Repositories
 
 ###############################################################################
 # General UI/UX                                                               #
