@@ -4,4 +4,8 @@ $(brew --prefix)/opt/fzf/install
 
 pushd ~/Repositories/dotfiles
 git remote set-url origin git@github.com:kevinlacotaco/dotfiles.git
+
+git submodule init
+git submodule update
 popd
+
