@@ -1,7 +1,10 @@
-[User]
+[user]
   name = Kevin Lakotko
   email = klakotko@gmail.com
-[Alias]
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[alias]
   st = status
   git = "!git"
   unstage = reset
