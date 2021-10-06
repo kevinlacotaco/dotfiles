@@ -2,7 +2,7 @@
 execute pathogen#infect()
 
 " Add fzf to the runtime path
-set rtp+=~/.fzf
+set rtp+=/usr/local/opt/fzf
 
 " Use Vim settings, rather than Vi settings
 " Setup right after pathogen due to side effects
