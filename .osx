@@ -33,7 +33,7 @@ else
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 fi
 
-defaults read > ~/Documents/currentsettings
+defaults read > ~/Documents/currentsettings-$(date +%Y-%m-%dT%H:%M)
 
 ###############################################################################
 # General UI/UX                                                               #
