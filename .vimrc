@@ -123,8 +123,8 @@ hi Folded ctermbg=none ctermfg=yellow cterm=bold
 
 hi Search ctermfg=black cterm=bold
 hi IncSearch ctermfg=black ctermbg=yellow cterm=bold
-#hi Search ctermbg=lightgray ctermfg=darkblue
-#hi IncSearch ctermbg=none ctermfg=darkyellow
+" hi Search ctermbg=lightgray ctermfg=darkblue
+" hi IncSearch ctermbg=none ctermfg=darkyellow
 
 hi SpellBad ctermfg=gray ctermbg=darkred cterm=underline,bold
 
