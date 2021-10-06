@@ -46,7 +46,7 @@ endif
 " Show me tabs, trailing spaces
 set list listchars=tab:→\ ,trail:·,extends:>
 
-set mouse=n
+set mouse=a
 
 set fillchars+=stl:\ ,stlnc:\ "
 
