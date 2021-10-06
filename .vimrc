@@ -255,6 +255,8 @@ endif
 
 "Begin powerline/airline/lightline
 
+set laststatus=2
+
 let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
