@@ -53,4 +53,5 @@ export JRE_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Ho
 export EDITOR=`which vim`
 bindkey "^?" backward-delete-char
 
-pathappend "/Users/kevin/bin"
+pathappend /Users/kevin/bin
+pathprepend ~/Library/Python/3.8/bin
