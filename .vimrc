@@ -71,7 +71,7 @@ set colorcolumn=+1
 "  n... :  where to save the viminfo files
 set viminfo='10,\"100,:20,n~/.viminfo
 set undofile
-set undodir=/Users/kevin/.vim/undodir
+set undodir=~/.vim/undodir
 
 " =========================== Indentation ===================================
 
