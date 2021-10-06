@@ -49,7 +49,7 @@ pathappend() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export JRE_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
+export JRE_HOME=/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/
 export EDITOR=`which vim`
 bindkey "^?" backward-delete-char
 
