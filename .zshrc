@@ -7,6 +7,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle npm
 antigen bundle nvm
+antigen bundle fzf
 antigen bundle z
 antigen bundle jira
 antigen bundle command-not-found
@@ -47,7 +48,7 @@ pathappend() {
 #[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 #[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export JRE_HOME=/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/
 export EDITOR=`which vim`
