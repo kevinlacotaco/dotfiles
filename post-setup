@@ -11,6 +11,7 @@ popd
 
 # Install the latest LTS Node
 nvm install --lts
-nvm alias default node
+nvm alias default "lts/*"
 
+# Install yarn for projects
 npm install -g yarn
