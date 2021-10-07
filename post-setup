@@ -9,3 +9,8 @@ git submodule init
 git submodule update
 popd
 
+# Install the latest LTS Node
+nvm install --lts
+nvm alias default node
+
+npm install -g yarn
