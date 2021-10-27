@@ -7,3 +7,4 @@ Thumbs.db
 *.LSOverride
 .bundle
 .vim/undodir
+*.swp
