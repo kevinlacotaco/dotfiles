@@ -33,6 +33,10 @@ antigen apply
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias :q=exit
 
+openat() {
+  vim "+normal $1G$2|" $3
+}
+
 pathprepend() {
     if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
         PATH="$1${PATH:+":$PATH"}"
