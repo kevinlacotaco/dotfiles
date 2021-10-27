@@ -34,7 +34,10 @@ antigen apply
 alias :q=exit
 
 openat() {
-  vim "+normal $1G$2|" $3
+  local parts=("${(@s/:/)1}")
+
+  vim "+normal $parts[2]G$parts[3]|" $parts[1]
+  #vim "+normal $1G$2|" $3
 }
 
 pathprepend() {
