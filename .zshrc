@@ -40,6 +40,11 @@ openat() {
   #vim "+normal $1G$2|" $3
 }
 
+ctrlp() {
+    < /dev/tty vim -c "autocmd VimEnter * nested Files "
+}
+zle -N ctrlp
+
 pathprepend() {
     if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
         PATH="$1${PATH:+":$PATH"}"
