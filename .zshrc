@@ -68,3 +68,6 @@ bindkey "^?" backward-delete-char
 
 pathappend /Users/kevin/bin
 pathprepend ~/Library/Python/3.8/bin
+
+[ -f $(brew --prefix)/share/zsh/site-functions/git-completion.bash ] && rm $(brew --prefix)/share/zsh/site-functions/git-completion.bash
+[ -f $(brew --prefix)/share/zsh/site-functions/_git ] && rm $(brew --prefix)/share/zsh/site-functions/_git
